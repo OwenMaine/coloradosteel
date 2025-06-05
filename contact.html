@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - COLORADO STEEL INC</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        /* Custom styles for dark form fields */
+        .form-input {
+            background-color: #1f2124; /* A slightly lighter dark shade */
+            border: 1px solid #4b5563; /* Tailwind gray-600 */
+            color: #e5e7eb; /* Tailwind gray-200 */
+            transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .form-input:focus {
+            outline: none;
+            border-color: #fbbf24; /* Amber-400 */
+            box-shadow: 0 0 0 2px rgba(251, 191, 36, 0.3);
+        }
+        /* Style for the dark-themed map */
+        .map-dark iframe {
+            filter: invert(1) hue-rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+
+    <div id="wrapper">
+
+        <header id="header-nav" class="fixed top-0 left-0 right-0 z-50 py-3">
+            <div class="container mx-auto px-6 flex justify-between items-center">
+                <a href="index.html" class="flex items-center text-white">
+                    <i class="fas fa-atom fa-2x text-amber-400 mr-2"></i>
+                    <span class="font-bold text-2xl tracking-tight" style="font-family: 'Montserrat', sans-serif;">COLORADO STEEL</span>
+                </a>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="services.html" class="nav-link">Services</a>
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                </nav>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" aria-expanded="false" aria-controls="mobile-menu" class="text-gray-200 hover:text-amber-400 focus:outline-none">
+                        <i class="fas fa-bars fa-lg"></i>
+                    </button>
+                </div>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden bg-gray-800 bg-opacity-95 absolute top-full left-0 right-0 shadow-lg">
+                <a href="index.html" class="block px-6 py-4 text-gray-200 hover:bg-amber-500 hover:text-gray-900 font-medium border-b border-gray-700">Home</a>
+                <a href="about.html" class="block px-6 py-4 text-gray-200 hover:bg-amber-500 hover:text-gray-900 font-medium border-b border-gray-700">About</a>
+                <a href="services.html" class="block px-6 py-4 text-gray-200 hover:bg-amber-500 hover:text-gray-900 font-medium border-b border-gray-700">Services</a>
+                <a href="contact.html" class="block px-6 py-4 text-gray-200 hover:bg-amber-500 hover:text-gray-900 font-medium">Contact</a>
+            </div>
+        </header>
+
+        <main id="main">
+
+            <section id="banner" class="banner major" style="background-image: url('assets/images/18.jpg'); min-height: 60vh;">
+                 <div class="inner">
+                    <header class="wow animate__animated animate__fadeInDown" data-wow-delay="0.2s">
+                        <h1>Contact Us</h1>
+                    </header>
+                    <div class="content wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">
+                        <p>We're ready to listen. Reach out to our team to discuss your project, request a quote, or ask any questions you may have.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact-form" class="py-16 md:py-24">
+                <div class="container mx-auto px-6">
+                    <div class="grid md:grid-cols-5 gap-12">
+                        <div class="md:col-span-2 wow animate__animated animate__fadeInLeft" data-wow-delay="0.2s">
+                            <h2 class="text-3xl font-bold mb-6">Get In Touch</h2>
+                            <p class="text-gray-400 mb-8">
+                                Use the form to send us a message, or contact us directly via phone or email. We look forward to connecting with you.
+                            </p>
+                            <div class="space-y-6">
+                                <div class="flex items-start">
+                                    <i class="fas fa-map-marker-alt fa-fw text-2xl text-amber-400 mt-1"></i>
+                                    <div class="ml-4">
+                                        <h3 class="text-xl font-semibold text-white">Our Address</h3>
+                                        <p class="text-gray-400">4836 VAN GORDON ST<br>WHEAT RIDGE, CO 80033</p>
+                                        <a href="https://www.google.com/maps/search/?api=1&query=4836+VAN+GORDON+ST+WHEAT+RIDGE+CO+80033" target="_blank" class="text-cyan-400 hover:text-cyan-300 transition-colors mt-1 inline-block">View on Map &rarr;</a>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-envelope fa-fw text-2xl text-amber-400 mt-1"></i>
+                                    <div class="ml-4">
+                                        <h3 class="text-xl font-semibold text-white">Email Us</h3>
+                                        <a href="mailto:management@colosteelmfg.com" class="text-cyan-400 hover:text-cyan-300 transition-colors">management@colosteelmfg.com</a>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-phone-alt fa-fw text-2xl text-amber-400 mt-1"></i>
+                                    <div class="ml-4">
+                                        <h3 class="text-xl font-semibold text-white">Call Us</h3>
+                                        <a href="tel:7697701312" class="text-cyan-400 hover:text-cyan-300 transition-colors">(769) 770-1312</a>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-clock fa-fw text-2xl text-amber-400 mt-1"></i>
+                                    <div class="ml-4">
+                                        <h3 class="text-xl font-semibold text-white">Business Hours</h3>
+                                        <p class="text-gray-400">Monday - Friday: 8:00 AM - 5:00 PM</p>
+                                        <p class="text-gray-400">Saturday - Sunday: Closed</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="md:col-span-3 wow animate__animated animate__fadeInRight" data-wow-delay="0.3s">
+                             <h2 class="text-3xl font-bold mb-6">Send a Message</h2>
+                             <form>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                                    <div>
+                                        <label for="name" class="block text-gray-300 font-semibold mb-2">Full Name</label>
+                                        <input type="text" id="name" name="name" class="w-full px-4 py-3 rounded-md form-input" required>
+                                    </div>
+                                    <div>
+                                        <label for="email" class="block text-gray-300 font-semibold mb-2">Email Address</label>
+                                        <input type="email" id="email" name="email" class="w-full px-4 py-3 rounded-md form-input" required>
+                                    </div>
+                                </div>
+                                <div class="mb-6">
+                                    <label for="subject" class="block text-gray-300 font-semibold mb-2">Subject</label>
+                                    <input type="text" id="subject" name="subject" class="w-full px-4 py-3 rounded-md form-input" required>
+                                </div>
+                                <div class="mb-6">
+                                    <label for="message" class="block text-gray-300 font-semibold mb-2">Message</label>
+                                    <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 rounded-md form-input" required></textarea>
+                                </div>
+                                <p class="text-sm text-gray-500 mb-6">Note: This button will open your default email application. Please ensure your message is copied if needed.</p>
+                                <div>
+                                    <a href="mailto:management@colosteelmfg.com?subject=Website%20Inquiry" class="button primary icon solid fa-paper-plane">
+                                        Send via Email
+                                    </a>
+                                </div>
+                             </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="map" class="map-dark">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3066.609870778418!2d-105.10701008462364!3d39.77078997944564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876b8511a2e97799%3A0xb3b6dd65f79422de!2s4836%20Van%20Gordon%20St%2C%20Wheat%20Ridge%2C%20CO%2080033%2C%20USA!5e0!3m2!1sen!2sng!4v1620209000000!5m2!1sen!2sng"
+                    width="100%"
+                    height="500"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="COLORADO STEEL INC Location">
+                </iframe>
+            </section>
+
+        </main>
+
+        <footer id="footer">
+            <div class="container mx-auto px-6">
+                <div class="mb-8 social-icons">
+                    
+                </div>
+                <div class="mb-8 footer-links text-sm">
+                    <a href="index.html">Home</a> |
+                    <a href="about.html">About</a> |
+                    <a href="services.html">Services</a> |
+                    <a href="contact.html">Contact</a> |
+                    <a href="#">Privacy Policy</a> </div>
+                <div class="contact-info text-sm mb-4">
+                    <p><i class="fas fa-map-marker-alt fa-fw"></i> 4836 VAN GORDON ST, WHEAT RIDGE, CO 80033</p>
+                    <p><i class="fas fa-phone-alt fa-fw"></i> (769) 770-1312 | <i class="fas fa-envelope fa-fw"></i> management@colosteelmfg.com</p>
+                </div>
+                <p class="copyright">&copy; <span id="currentYear"></span> COLORADO STEEL INC. All rights reserved. Design Inspired by HTML5UP.</p>
+            </div>
+        </footer>
+
+    </div> <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

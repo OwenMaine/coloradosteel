@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLORADO STEEL INC - Innovative Steel Solutions</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <div id="wrapper">
+
+        <header id="header-nav" class="fixed top-0 left-0 right-0 z-50 py-3">
+            <div class="container mx-auto px-6 flex justify-between items-center">
+                <a href="index.html" class="flex items-center text-white">
+                    <i class="fas fa-atom fa-2x text-amber-400 mr-2"></i>
+                    <span class="font-bold text-2xl tracking-tight" style="font-family: 'Montserrat', sans-serif;">COLORADO STEEL</span>
+                </a>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="nav-link active">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="services.html" class="nav-link">Services</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </nav>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" aria-expanded="false" aria-controls="mobile-menu" class="text-gray-200 hover:text-amber-400 focus:outline-none">
+                        <i class="fas fa-bars fa-lg"></i>
+                    </button>
+                </div>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden bg-gray-800 bg-opacity-95 absolute top-full left-0 right-0 shadow-lg">
+                <a href="index.html" class="block px-6 py-4 text-gray-200 hover:bg-amber-500 hover:text-gray-900 font-medium border-b border-gray-700">Home</a>
+                <a href="about.html" class="block px-6 py-4 text-gray-200 hover:bg-amber-500 hover:text-gray-900 font-medium border-b border-gray-700">About</a>
+                <a href="services.html" class="block px-6 py-4 text-gray-200 hover:bg-amber-500 hover:text-gray-900 font-medium border-b border-gray-700">Services</a>
+                <a href="contact.html" class="block px-6 py-4 text-gray-200 hover:bg-amber-500 hover:text-gray-900 font-medium">Contact</a>
+            </div>
+        </header>
+
+        <main id="main">
+
+            <section id="banner" class="banner major" style="background-image: url('assets/images/1.jpg');">
+                 <div class="inner">
+                    <header class="wow animate__animated animate__fadeInDown" data-wow-delay="0.2s">
+                        <h1>COLORADO STEEL INC</h1>
+                    </header>
+                    <div class="content wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">
+                        <p>Forging the Future with Unyielding Strength and Precision Engineering.<br class="hidden md:inline">Your Premier Partner in Steel Construction.</p>
+                        <ul class="actions">
+                            <li><a href="#intro" class="button primary icon solid fa-arrow-down scrolly">Discover More</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="intro" class="spotlight">
+                <div class="image-content wow animate__animated animate__fadeInLeft" data-wow-delay="0.2s"><img src="assets/images/2.jpg" alt="Colorado Steel Team or Project" /></div>
+                <div class="text-content wow animate__animated animate__fadeInRight" data-wow-delay="0.2s">
+                    <span class="text-sm font-semibold tracking-widest uppercase text-cyan-400">Our Foundation</span>
+                    <h2>Building Beyond Structures</h2>
+                    <p>Since [Year], COLORADO STEEL INC has been a cornerstone in the steel construction industry, transforming ambitious visions into tangible realities. We merge innovative techniques with time-honored craftsmanship to deliver projects that are not only structurally sound but also aesthetically exceptional.</p>
+                    <p>Our commitment is to provide unparalleled service, safety, and quality, ensuring every client's success is built on a foundation of steel and trust.</p>
+                    <ul class="actions">
+                        <li><a href="about.html" class="button secondary">Learn Our Story</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="services" class="tiles">
+                <div class="section-header wow animate__animated animate__fadeIn" data-wow-delay="0.1s">
+                    <span class="text-sm font-semibold tracking-widest uppercase text-cyan-400">What We Do</span>
+                    <h2>Core Steel Expertise</h2>
+                    <p>Delivering a comprehensive suite of steel services, from conceptual design to final erection, tailored to your project's unique demands.</p>
+                </div>
+                <div class="tile-grid">
+                    <article class="tile wow animate__animated animate__zoomIn" data-wow-delay="0.2s">
+                        <span class="icon fas fa-drafting-compass"></span>
+                        <header>
+                            <h3>Design & Engineering</h3>
+                        </header>
+                        <p>Precision-driven structural designs using cutting-edge BIM technology for optimal performance and safety.</p>
+                    </article>
+                    <article class="tile wow animate__animated animate__zoomIn" data-wow-delay="0.3s">
+                        <span class="icon fas fa-cogs"></span>
+                        <header>
+                            <h3>Steel Fabrication</h3>
+                        </header>
+                        <p>State-of-the-art fabrication facility ensuring high-quality, custom steel components meeting exact specifications.</p>
+                    </article>
+                    <article class="tile wow animate__animated animate__zoomIn" data-wow-delay="0.4s">
+                        <span class="icon fas fa-hard-hat"></span>
+                        <header>
+                            <h3>Installation & Erection</h3>
+                        </header>
+                        <p>Safe and efficient on-site installation by our certified professionals, ensuring project integrity and timelines.</p>
+                    </article>
+                </div>
+                <div class="text-center mt-12 wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">
+                    <a href="services.html" class="button secondary">Explore All Services</a>
+                </div>
+            </section>
+
+            <section id="projects" class="spotlight alt">
+                 <div class="image-content wow animate__animated animate__fadeInRight" data-wow-delay="0.2s"><img src="assets/images/3.jpg" alt="Featured Steel Project" /></div>
+                <div class="text-content wow animate__animated animate__fadeInLeft" data-wow-delay="0.2s">
+                    <span class="text-sm font-semibold tracking-widest uppercase text-cyan-400">Our Portfolio</span>
+                    <h2>Exemplary Steel Craftsmanship</h2>
+                    <p>We take pride in our diverse portfolio of successfully completed projects, each reflecting our dedication to quality, innovation, and client satisfaction. From complex industrial structures to iconic commercial buildings, our work speaks for itself.</p>
+                    <ul class="actions">
+                        <li><a href="index.html#project-gallery" class="button secondary">View More Projects</a></li> </ul>
+                </div>
+            </section>
+            <section id="project-gallery" class="tiles hidden"> <div class="section-header wow animate__animated animate__fadeIn" data-wow-delay="0.1s">
+                    <h2>Project Gallery</h2>
+                 </div>
+                 <div class="tile-grid">
+                    <article class="tile wow animate__animated animate__zoomIn" data-wow-delay="0.2s">
+                        <div class="tile-image-wrapper"><img src="assets/images/4.jpg" alt="Project Image"></div>
+                        <div class="tile-content"><header><h3>Commercial Complex</h3></header></div>
+                    </article>
+                     <article class="tile wow animate__animated animate__zoomIn" data-wow-delay="0.3s">
+                        <div class="tile-image-wrapper"><img src="assets/images/5.jpg" alt="Project Image"></div>
+                        <div class="tile-content"><header><h3>Industrial Warehouse</h3></header></div>
+                    </article>
+                     <article class="tile wow animate__animated animate__zoomIn" data-wow-delay="0.4s">
+                        <div class="tile-image-wrapper"><img src="assets/images/6.jpg" alt="Project Image"></div>
+                        <div class="tile-content"><header><h3>Custom Structure</h3></header></div>
+                    </article>
+                 </div>
+            </section>
+
+
+            <section class="testimonials">
+                <div class="container mx-auto px-6">
+                    <div class="section-header text-center mb-12 md:mb-16 wow animate__animated animate__fadeIn">
+                        <span class="text-sm font-semibold tracking-widest uppercase text-cyan-400">Client Voices</span>
+                        <h2 class="text-3xl md:text-4xl">What Our Partners Say</h2>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="testimonial-item wow animate__animated animate__fadeInLeft" data-wow-delay="0.2s">
+                            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                            <p class="quote">"Colorado Steel Inc transformed our vision into a stunning reality. Their professionalism and attention to detail were second to none. The project was delivered on time and exceeded our expectations!"</p>
+                            <p class="author">- Alex P., CEO of FutureBuild Corp</p>
+                        </div>
+                        <div class="testimonial-item wow animate__animated animate__fadeInRight" data-wow-delay="0.3s">
+                            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                            <p class="quote">"Working with Colorado Steel Inc was a seamless experience. Their expertise in complex steel fabrication is truly impressive. We highly recommend them for any challenging steel construction project."</p>
+                            <p class="author">- Samantha R., Lead Architect, Apex Designs</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cta-section wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+                <div class="container mx-auto px-6">
+                    <h2>Ready to Build Something Extraordinary?</h2>
+                    <p>Let's collaborate on your next steel construction project. Contact us today for a consultation and discover how we can elevate your vision with strength and style.</p>
+                    <ul class="actions">
+                        <li><a href="contact.html" class="button primary icon solid fa-paper-plane">Request a Quote</a></li>
+                    </ul>
+                </div>
+            </section>
+
+        </main>
+
+        <footer id="footer">
+            <div class="container mx-auto px-6">
+                <div class="mb-8 social-icons">
+                   
+                </div>
+                <div class="mb-8 footer-links text-sm">
+                    <a href="index.html">Home</a> |
+                    <a href="about.html">About</a> |
+                    <a href="services.html">Services</a> |
+                    <a href="contact.html">Contact</a> |
+                    <a href="#">Privacy Policy</a> </div>
+                <div class="contact-info text-sm mb-4">
+                    <p><i class="fas fa-map-marker-alt fa-fw"></i> 4836 VAN GORDON ST, WHEAT RIDGE, CO 80033</p>
+                    <p><i class="fas fa-phone-alt fa-fw"></i> (769) 770-1312 | <i class="fas fa-envelope fa-fw"></i> management@colosteelmfg.com</p>
+                </div>
+                <p class="copyright">&copy; <span id="currentYear"></span> COLORADO STEEL INC. All rights reserved. Design Inspired by HTML5UP.</p>
+            </div>
+        </footer>
+
+    </div> <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
